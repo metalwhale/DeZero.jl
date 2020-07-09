@@ -1,5 +1,7 @@
 module DeZero
 
-greet() = print("Hello World!")
+export Variable
+
+include("step01.jl")
 
 end # module
