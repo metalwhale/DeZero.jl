@@ -1,0 +1,7 @@
+version: "3"
+services:
+  dezero:
+    image: julia:1.4.2
+    volumes:
+      - ../DeZero:/usr/DeZero
+    working_dir: /usr/DeZero

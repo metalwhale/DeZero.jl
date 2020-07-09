@@ -1,0 +1,4 @@
+name = "DeZero"
+uuid = "95bd106e-bd16-4d7c-9118-c3b71566c3ec"
+authors = ["Metal Whale <metalwhale.dev@gmail.com>"]
+version = "0.1.0"
