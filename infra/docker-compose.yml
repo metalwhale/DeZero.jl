@@ -5,3 +5,4 @@ services:
     volumes:
       - ../DeZero:/usr/DeZero
     working_dir: /usr/DeZero/examples
+    tty: true

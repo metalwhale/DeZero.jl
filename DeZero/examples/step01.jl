@@ -1,8 +1,4 @@
-import Pkg
-Pkg.activate(joinpath(@__DIR__, ".."));
-Pkg.instantiate()
-
-using Revise
+include("example.jl")
 import DeZero: Variable
 
 function test()

@@ -4,9 +4,19 @@ Implementation of [ゼロから作るDeep Learning ❸](https://www.oreilly.co.j
 ## How to run
 - Start the container:
 ```
-$ docker-compose run dezero
+host$ docker-compose up -d
 ```
+
+- Get into the container then run examples:
+<pre>
+host$ docker-compose exec dezero bash
+container# julia
+julia> include("step<i>xx</i>.jl")
+</pre>
+
 - Clean up after finished:
 ```
-$ docker-compose down
+julia> exit()
+container# exit
+host$ docker-compose down
 ```
