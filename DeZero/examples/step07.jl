@@ -11,7 +11,5 @@ b = B(a)
 y = C(b)
 
 y.grad = [1.0]
-b.grad = backward(C, y.grad)
-a.grad = backward(B, b.grad)
-x.grad = backward(A, a.grad)
+backward(y)
 print(x.grad)
