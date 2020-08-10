@@ -1,4 +1,4 @@
-function numerical_diff(f::Union{_Function,Function}, x::Variable, eps::Float64=1e-4)
+function numerical_diff(f::Union{Function,Core.Function}, x::Variable, eps::Float64=1e-4)
     x0 = Variable(x.data .- eps)
     x1 = Variable(x.data .+ eps)
     y0::Variable = f(x0)
