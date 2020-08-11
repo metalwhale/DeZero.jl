@@ -8,11 +8,13 @@ host$ docker-compose up -d
 ```
 
 - Get into the container then run examples:
-<pre>
+```
 host$ docker-compose exec dezero bash
 container# julia
-julia> include("step<i>xx</i>.jl")
-</pre>
+julia>
+(@v1.4) pkg> activate .
+(DeZero) pkg> test
+```
 
 - Clean up after finished:
 ```
