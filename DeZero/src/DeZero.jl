@@ -1,7 +1,7 @@
 module DeZero
 
-export Variable, Add
+export Variable, add
 
-include("step11.jl")
+include("step12.jl")
 
 end # module

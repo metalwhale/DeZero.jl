@@ -9,8 +9,7 @@ function numerical_diff(f::Union{Function,Core.Function}, x::Variable, eps::Floa
     return (y1.data - y0.data) / (2 * eps)
 end
 
-xs = [Variable([2]), Variable([3])]
-f = Add()
-ys = f(xs)
-y = ys[1]
+x0 = Variable([2])
+x1 = Variable([3])
+y = add(x0, x1)
 print(y.data)
