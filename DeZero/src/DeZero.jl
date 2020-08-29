@@ -1,7 +1,7 @@
 module DeZero
 
-export Variable, add
+export Variable, backward, add, square
 
-include("step12.jl")
+include("step13.jl")
 
 end # module
