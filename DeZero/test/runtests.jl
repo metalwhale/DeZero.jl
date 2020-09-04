@@ -9,12 +9,10 @@ function numerical_diff(f::Union{Function,Core.Function}, x::Variable, eps::Floa
     return (y1.data - y0.data) / (2 * eps)
 end
 
-x = Variable([3.0])
-y = add(x, x)
+x = Variable([2.0])
+a = square(x)
+y = add(square(a), square(a))
 backward(y)
-println(x.grad)
 
-cleargrad(x)
-y = add(add(x, x), x)
-backward(y)
+println(y.data)
 println(x.grad)
